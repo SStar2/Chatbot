@@ -17,7 +17,20 @@ print("2. Placeholder Option 2")
 print("3. Placeholder Option 3")
 print("4. Exit the conversation")
 
-option = input("Enter the number of your choice: ")
+def user_selection():
+  user_option = int(input("Enter the number of your choice: "))
+  if user_option == 4:
+    print("You have choosen to exit the Chatbox. Goodbye and have a nice day!")
+  elif user_option == 1:
+    print('You have choosen Option 1 and here is the response.')
+  elif user_option == 2:
+    print("You have choosen Option 2 and here is the response.")
+  elif user_option == 3:
+    print("You have choosen Option 3 and here is the response.")
+  else:
+    print("That is not a valid option. Please choose one of the four given options.")
+user_selection()
+    
 #For the pull request 
 
 
